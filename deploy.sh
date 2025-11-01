@@ -259,7 +259,7 @@ clone_enterprise() {
         cd ..
     else
         print_info "Cloning enterprise repository (this may take 5-10 minutes)..."
-        git clone -b $DEFAULT_BRANCH https://$GITHUB_USER:$GITHUB_TOKEN@github.com/odoo/enterprise.git enterprise
+        git clone -b $DEFAULT_BRANCH https://$GITHUB_USER:$GITHUB_TOKEN@github.com/eastren/odoo19-enterprise.git enterprise
     fi
     
     # Verify clone
