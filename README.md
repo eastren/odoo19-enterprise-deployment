@@ -17,14 +17,14 @@
 ### **One-Command Deployment:**
 
 ```bash
-curl -s https://raw.githubusercontent.com/Husen2012/odoo19-enterprise/main/deploy.sh | bash
+curl -s https://raw.githubusercontent.com/eastren/odoo19-enterprise-deployment/main/deploy.sh | bash
 ```
 
 ### **Or Manual Deployment:**
 
 ```bash
 # Clone repository
-git clone https://github.com/Husen2012/odoo19-enterprise.git
+git clone https://github.com/eastren/odoo19-enterprise-deployment.git
 cd odoo19-enterprise
 
 # Run deployment
@@ -95,8 +95,8 @@ cd odoo19-enterprise
 ./deploy.sh --auto \
   --github-user "yourusername" \
   --github-token "ghp_your_token" \
-  --main-port 10024 \
-  --longpolling-port 20024 \
+  --main-port 8069 \
+  --longpolling-port 8072 \
   --db-password "your_secure_password"
 ```
 
@@ -104,8 +104,8 @@ cd odoo19-enterprise
 ```bash
 export GITHUB_USER="yourusername"
 export GITHUB_TOKEN="ghp_your_token"
-export MAIN_PORT="10024"
-export LONGPOLLING_PORT="20024"
+export MAIN_PORT="8069"
+export LONGPOLLING_PORT="8072"
 export DB_PASSWORD="your_secure_password"
 ./deploy.sh --env
 ```
@@ -113,8 +113,8 @@ export DB_PASSWORD="your_secure_password"
 ## ⚙️ Configuration
 
 ### **Default Settings:**
-- **Main Port**: 10024
-- **Longpolling Port**: 20024
+- **Main Port**: 8069
+- **Longpolling Port**: 8072
 - **Database**: PostgreSQL 17
 - **Admin Password**: `Enterprise@2025`
 - **Workers**: 4
@@ -331,7 +331,7 @@ curl -s https://raw.githubusercontent.com/Husen2012/odoo19-enterprise-deployment
 
 **🚀 Ready to deploy Odoo 19 Enterprise on any server in minutes!**
 
-**Repository**: https://github.com/Husen2012/odoo19-enterprise
+**Repository**: https://github.com/eastren/odoo19-enterprise-deployment
 **Version**: 1.0.0  
 **Modules**: 719+ Enterprise modules  
 **Status**: Production ready  
