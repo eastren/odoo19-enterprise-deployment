@@ -21,12 +21,12 @@ NC='\033[0m'
 VERSION="1.0.0"
 
 # Default configuration
-DEFAULT_MAIN_PORT="10024"
-DEFAULT_LONGPOLLING_PORT="20024"
+DEFAULT_MAIN_PORT="8069"
+DEFAULT_LONGPOLLING_PORT="8072"
 DEFAULT_DB_PASSWORD="odoo19enterprise@$(date +%Y)"
 DEFAULT_ADMIN_PASSWORD="Enterprise@$(date +%Y)"
-DEFAULT_INSTALL_DIR="/opt/odoo19-enterprise"
-DEFAULT_GITHUB_REPO="https://github.com/odoo/enterprise.git"
+DEFAULT_INSTALL_DIR="/home/docker/odoo19-enterprise"
+DEFAULT_GITHUB_REPO="https://github.com/eastren/odoo19-enterprise.git"
 DEFAULT_BRANCH="19.0"
 
 # Functions
