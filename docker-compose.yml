@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   db:
-    image: postgres:17
+    image: postgres:17.0
     container_name: odoo19-enterprise-db
     environment:
       - POSTGRES_DB=postgres
@@ -21,7 +21,7 @@ services:
       - odoo_network
 
   odoo19:
-    image: odoo:19
+    image: odoo:19.0
     container_name: odoo19-enterprise
     depends_on:
       db:
