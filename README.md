@@ -25,7 +25,7 @@ curl -s https://raw.githubusercontent.com/eastren/odoo19-enterprise-deployment/m
 ```bash
 # Clone repository
 git clone https://github.com/eastren/odoo19-enterprise-deployment.git
-cd odoo19-enterprise
+cd odoo19-enterprise-deployment
 
 # Run deployment
 ./deploy.sh
