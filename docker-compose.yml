@@ -27,8 +27,8 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "10024:8069"
-      - "20024:8072"
+      - "8069:8069"
+      - "8072:8072"
     volumes:
       - ./addons:/mnt/extra-addons
       - ./enterprise:/mnt/enterprise-addons
