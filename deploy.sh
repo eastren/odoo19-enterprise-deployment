@@ -259,7 +259,7 @@ clone_enterprise() {
         cd ..
     else
         print_info "Cloning enterprise repository (this may take 5-10 minutes)..."
-        git clone -b $DEFAULT_BRANCH https://$GITHUB_USER:$GITHUB_TOKEN@github.com/eastren/odoo19-enterprise.git enterprise
+        git clone https://github.com/eastren/odoo19-enterprise.git enterprise
     fi
     
     # Verify clone
@@ -312,7 +312,7 @@ version: '3.8'
 
 services:
   db:
-    image: postgres:17
+    image: postgres:17.0
     container_name: odoo19-enterprise-db
     environment:
       - POSTGRES_DB=postgres
@@ -331,7 +331,7 @@ services:
       - odoo_network
 
   odoo19:
-    image: odoo:19
+    image: odoo:19.0
     container_name: odoo19-enterprise
     depends_on:
       db:
